@@ -25,7 +25,7 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .nav-main{
@@ -118,10 +118,13 @@ a{
     font-weight: 200;
     font-size: 64px;
     color: #fff;
+    position: relative;
+    
 }
 .main-center-title .sub-title{
     color: #ffffff;
     font-size: 25px;
+    position: relative;
 }
 body .margin-top-30{
     margin-top: 35vh;
@@ -137,4 +140,23 @@ body .margin-bottom-30{
     background: url(../asset/cover1.jpg);
     background-size: cover;
     background-attachment: fixed ;
+}
+.btn-subscribe{
+    width: auto;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    border: 2px solid rgba(255, 255, 255, 0.8);;
+    padding: 10px 25px 10px 25px;   
+}
+.btn-subscribe:hover{
+    color: #ffffff;
+    border-color: #ffffff;
 }

@@ -29,15 +29,21 @@ var vh = $(window).height();
 $(document).ready(function () {
     $('.screen-height').css('height', vh);
     $('.margin-top-30').css('margin-top', vh * .35);
-    jQuery.scrollSpeed(120, 800);
+    jQuery.scrollSpeed(150, 800);
 });
-$(function () {
 
-    // Default
-
-
-});
 $(window).scroll(function () {
     $(".onscrollfadeout").css("opacity", 1 - $(window).scrollTop() / 400);
-   
+    $(".main-center-title h1").css({
+        bottom: -$(window).scrollTop() / 4,
+    });
+    $(".main-center-title h4").css({
+        bottom: -$(window).scrollTop() / 4,
+    });
+
+    $(".btn-subscribe").css({
+        bottom: -$(window).scrollTop() / 4,
+    });
+    //console.log($(window).scrollTop());
+
 });
